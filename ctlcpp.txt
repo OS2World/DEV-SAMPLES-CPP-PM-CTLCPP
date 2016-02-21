@@ -1,0 +1,27 @@
+*******************************************************************
+*                                                                 *
+* Subject: OS/2 Developer Magazine, "Writing OS/2 PM Controls     *
+*          in C++" - Sept/Oct 1994 issue.                         *
+* Purpose: Compilable C++ class library source for an abstract    *
+*          C++ custom control and test routine.                   *
+* Authors: Lori Ruffing, IBM Personal Systems Programming         *
+*          Eric Snell, IBM Personal Systems Programming           *
+*                                                                 *
+* Revisions:                                                      *
+*          Version 1 - Initial cut                                *
+*                                                                 *
+*******************************************************************
+*
+* This self-extracting zip file contains the source and executables
+* for a C Set++ User Interface Library (ICLUI) derived C++ class library
+* custom control.  See README.NOW for additional information.  We've
+* included makefiles for C Set++ compiler.  Additionally, a sample program
+* is included to demo the ICLUI style class library.
+*
+* Please direct any comments, questions, and such to either Lori Ruffing,
+* Eric Snell (Internet: esnell@vnet.ibm.com VNET: erics AT BCRNOTES), or
+* post on the OS2DF2/Section 13 (OS/2 Developer magazine) Forum on CompuServe.
+*
+* Please note that this code is freeware and is provided on an "AS IS"
+* basis, without any type of support.
+*

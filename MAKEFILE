@@ -1,0 +1,49 @@
+.SUFFIXES:
+
+.SUFFIXES: .c .cpp .cxx .rc
+
+CPPFLAGS=/Q+ /Weffobsparproreauniuse /Gm+ /Ge+ /Gd+ /O+ /Ti- /Ft- /Fi+ /Si+  \
+         /W2 /c
+CPPDBGFLAGS=/Q+ /Weffobsparproreauniuse /Gm+ /Ge+ /Gd+ /O- /Ti+ /Ft- /Fi+    \
+            /Si+ /Tx+ /Gh+ /W2 /c
+LFLAGS=/pmtype:pm /nologo /NOE /bat
+LDBGFLAGS=/DEBUG /MAP /pmtype:pm /nologo /NOE /bat
+
+ALL: cppctl.EXE
+
+cppctl.EXE:  \
+  cppctl.OBJ \
+  iabswin.obj \
+  mctlevt.obj \
+  immovevt.obj \
+  immovhdr.obj \
+  newctl.obj \
+  newctevt.obj \
+  newcthdr.obj \
+  MAKEFILE
+   ICC.EXE @<<
+ /Tdp /B"$(LFLAGS)"
+ /Fe"CPPCTL.EXE" dde4muii.lib os2386.lib cppctl.def
+cppctl.OBJ
+iabswin.obj
+mctlevt.obj
+immovevt.obj
+immovhdr.obj
+newctl.obj
+newctevt.obj
+newcthdr.obj
+<<
+
+{.}.rc.res:
+   RC -r .\$*.RC
+
+{.}.c.obj:
+   ICC.EXE $(CPPFLAGS) .\$*.c
+
+{.}.cpp.obj:
+   ICC.EXE $(CPPFLAGS) .\$*.cpp
+
+{.}.cxx.obj:
+   ICC.EXE $(CPPFLAGS) .\$*.cxx
+
+

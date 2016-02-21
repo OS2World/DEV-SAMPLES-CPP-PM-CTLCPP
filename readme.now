@@ -1,0 +1,46 @@
+August 29th, 1994
+
+************************************************************************
+* Notes of Interest                                                    *
+************************************************************************
+This source code illustrates one of the three major aspects of custom
+control design and the ICLUI:
+               1) Wrapper an existing PM (custom) control
+               2) Wrapper a replacement PM custom control
+               3) Write a custom control using the ICLUI nomeclature
+
+If you haven't already guessed, we illustrate number 3.  The other 2 are
+illustrated in the book, "OS/2 V2 C++ Class Library:  Power GUI Programming
+with C Set++" (published by VNR), and the article, "Object of Desire"
+(OS/2 Developer Sept/Oct '94) respectively.
+
+Items of interest that are shown in our abstract C++ custom control include
+window class registration, handling mouse click, move, and selection events,
+changing the pointer shape, handling paint events, and handling presentation
+parameter changes.  The makefile is designed to build an .EXE file.  However,
+if you would like to create a DLL from the control specific modules (all the
+non-CPPCTL modules), the lstbx3.exe package contains an illustration
+(described in the article "Object of Desire").  Also, the window class,
+"NewControlClass" is registered as a private control class.  If you would
+like to register it as a public window class, the wpobj.exe package contains
+a "how to" sample which is documented in the OS/2 Developer article, "An
+Object of Many Colors: Using Custom Controls Within A Workplace Object",
+Nov/Dec 1993.
+
+We have compiled and tested the source code using IBM C Set++ Version 2.1,
+at class library CSD level 6 (i.e. CTM0006).  If you have any questions or
+comments, please direct them to us AND NOT IBM.  This class library is NOT
+supported by IBM's C Set++ Group.
+
+Please direct any comments, questions, and such to either Lori Ruffing
+or Eric Snell (Internet: esnell@vnet.ibm.com VNET: erics AT BCRNOTES).
+
+Lori Ruffing
+Eric Snell
+
+************************************************************************
+* LMMs (i.e. Last Minute Modifications)                                *
+************************************************************************
+None
+
+
